@@ -1,83 +1,571 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
-    <title>Minha página</title>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>📄 Curriculum Vitae</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light margin">
-      <a class="navbar-brand" href="#">
-          <img src="imgs/img1 (1).jpeg" width="220" height="80">
-      </a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-          <li class="nav-item"></li>
-              <a class="nav-link" href="#quemsomos">Quem somos</a>
-          </li>
-          <li class="nav-item"></li>
-              <a class="nav-link" href="#parceiros">Parceiros</a>
-          </li>
-          <li class="nav-item"></li>
-              <a class="nav-link" href="#servicos">Serviços</a>
-          </li>
-        </ul>
-      </div>
+    <header>
+      <h1 class="name">BIANCA CRISTINA IONASHIRO</h1>
+    </header>
+    <nav class="menu">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="personal-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#personal-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="personal-tab-pane"
+            aria-selected="true"
+          >
+            Pessoal
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="professional-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#professional-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="professional-tab-pane"
+            aria-selected="false"
+          >
+            Objetivo Profissional
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="expirience-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#expirience-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="expirience-tab-pane"
+            aria-selected="false"
+          >
+            Experiência Anterior
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="extra-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#extra-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="extra-tab-pane"
+            aria-selected="false"
+          >
+            Formação Extra Currícular
+          </button>
+        </li>
+      </ul>
     </nav>
-
-    <section id="quemsomos">
-      <div class="container-fluid quem-somos text-center margin">
-        <h3 class="margin">Quem somos</h3>
-        <img src="imgs/img1 (2).jpeg" class="rounded-circle" width="400" height="400">
-        <h3>Somos um time comprometido com os resultados</h3>
-      </div>
-    </section>
-    
-    <section id="parceiros">
-      <div class="container-fluid parceiros text-center margin">
-        <h3 class="margin">Parceiros</h3>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <img src="imgs/img1 (3).jpeg" width="100%">
+    <main>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="personal-tab-pane"
+          role="tabpanel"
+          aria-labelledby="personal-tab"
+          tabindex="0"
+        >
+          <h5 class="pessoal">APRESENTAÇÃO:</h5>
+          <p>
+            Sou graduada em Recursos Humanos com MBA em Gestão Estratégica em
+            Compras e Administração Estratégica, com inglês intermediário. Faço
+            hoje minha segunda graduação em Análise e Desenvolvimento de
+            Sistemas, área pela qual sempre tive muita afinidade. Depois de
+            muitos anos na área administrativa, percebi uma grande atração pela
+            programação, que pretendo transformar em profissão! Sou analítica e
+            focada em estratégias e qualidade de processos. Colaborativa em
+            resolução de conflitos, sendo uma boa ouvinte atenta para as
+            necessidades. Curiosa em metodologias e propósitos de geração de
+            impacto de valor e melhoria contínua. Habilidosa na Governança de
+            Dados, tenho sólidos conhecimento em ferramentas Office, Planner,
+            Power Point, Power BI, Excel e Macros VBA Excel, entre outras
+            ferramentas como Canva, Lucidchart. Experiência em melhoria de
+            Processos, Seis Sigmas. Metodologia ágil: Gestão de Tempo, Miro,
+            Trello, Negociação. Pensamento crítico. Acredito que com minhas
+            habilidades já adquiridas em outro momento da minha carreira na
+            frente administrativa, posso contribuir bastante para melhorias de
+            processos nos projetos elaborados pela sua empresa.
+          </p>
+          <h5 class="contato">CONTATO:</h5>
+          <h5 class="instrucao">SCAN ME (GOOGLE LENS)</h5>
+          <img
+            class="rounded mx-auto d-block"
+            src="./assets/qrcode-contato.png"
+            alt="qrcode-contato"
+          />
+        </div>
+        <div
+          class="tab-pane fade"
+          id="professional-tab-pane"
+          role="tabpanel"
+          aria-labelledby="professional-tab"
+          tabindex="0"
+        >
+          <h5 class="objetivo">OBJETIVO:</h5>
+          <p class="alvo">Estágio em Desenvolvimento de Sistemas.</p>
+          <h5 class="graduacao">FORMAÇÃO ACADÊMICA:</h5>
+          <p class="curso">
+            Graduação em Análise e Desenvolvimento de Sistemas – Centro
+            Universitário Cidade Verde UniCV – Cursando.
+          </p>
+          <h5 class="habilidadeTech">HABILIDADES TÉCNICAS:</h5>
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-interval="10000"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="habilidadeAds" src="./assets/html.png" alt="html" />
+                <img class="habilidadeAds" src="./assets/css.png" alt="css" />
+                <img
+                  class="habilidadeAds"
+                  src="./assets/js.png"
+                  alt="javascript"
+                />
+                <img
+                  class="habilidadeAds"
+                  src="./assets/bootstrap.png"
+                  alt="bootstrap"
+                />
+                <img
+                  class="habilidadeAds"
+                  src="./assets/ts.png"
+                  alt="typescript"
+                />
+                <img
+                  class="habilidadeAds"
+                  src="./assets/angular.png"
+                  alt="angular"
+                />
+                <img
+                  class="habilidadeAds"
+                  src="./assets/react.png"
+                  alt="react"
+                />
+                <img class="habilidadeAds" src="./assets/node.png" alt="node" />
+                <img
+                  class="habilidadeAds"
+                  src="./assets/jquery.png"
+                  alt="jquery"
+                />
+                <img
+                  class="habilidadeAds"
+                  src="./assets/python.png"
+                  alt="python"
+                />
+                <img class="habilidadeAds" src="./assets/java.png" alt="java" />
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img
+                  class="habilidadeAds"
+                  src="./assets/mySQL.png"
+                  alt="mySQL"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img
+                  class="habilidadeAds"
+                  src="./assets/ij.png"
+                  alt="intelliJ idea"
+                />
+                <img
+                  class="habilidadeAds"
+                  src="./assets/vscode.png"
+                  alt="vscode"
+                />
+              </div>
             </div>
-            <div class="col-lg-4">
-              <img src="imgs/img1 (3).jpeg" width="100%">
+          </div>
+          <h5 class="habilidadeTech">CONHEÇA O MEU PORTIFÓLIO:</h5>
+          <a href="https://github.com/BiancaIonashiro?tab=repositories"
+            ><img
+              class="rounded mx-auto d-block"
+              src="./assets/gh.png"
+              alt="GitHub"
+          /></a>
+        </div>
+        <div
+          class="tab-pane"
+          id="expirience-tab-pane"
+          role="tabpanel"
+          aria-labelledby="expirience-tab"
+          tabindex="0"
+        >
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card rounded mx-auto d-block">
+                <img
+                  src="./assets/ambev-jaguariuna.jpeg"
+                  class="card-img-top"
+                  alt="equipe-ambev-jaguariuna"
+                />
+                <div class="card-header">
+                  <h5 class="card-title">AMBEV TECH LTDA</h5>
+                  <h6 class="card-sub-title">(Grupo Ambev Cervejaria S.A)</h6>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushItemOne"
+                >
+                  <div class="accordion-item">
+                    <h6 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Analista Administrativo<br />
+                        (2022/ 2021 - 1 ano)
+                      </button>
+                    </h6>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushItem"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          <u><b>Processos:</b></u>
+                          <b>Metodologia ágil:</b> Contribuição com as métricas
+                          para implementação. <b>5s:</b> Implementação de
+                          elaboração de manual, fluxogramas e padronização de
+                          armazenamento de dados. <b>Processos:</b> Contribuição
+                          em melhoria continua com o método lean.
+                          <b>Organização de dados:</b> Pesquisa para
+                          investigação de causa raiz do problema.
+                          <b>KPI:</b> Template e apresentação de resultados de
+                          dashboards com acompanhamentos de indicadores.
+                          <b>Análise de resultados:</b> Performance e plano de
+                          ação.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h6 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Assistente Administrativo<br />
+                        (2021/ 2018 - 2 anos e 8 meses)
+                      </button>
+                    </h6>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushItem"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          <u><b>Compras:</b></u>
+                          <b>Gestão de fornecedores:</b> Negociação, compras/
+                          contratação, acompanhamento de qualidade de produtos/
+                          serviços. <b>Prestação de contas:</b> Controle de
+                          valores de entradas/ saídas. <b>ERP:</b> Lançamento de
+                          compras e contratação de serviços.
+                          <b>Notas/ Cupom fiscal:</b> Classificação de contas
+                          contábil/ financeira para controle e lançamento.<br />
+                          <u><b>Coleta/ Envios:</b></u>
+                          <b>Contato:</b> Confirmação patrimonial e de dados.
+                          <b>Contratação de terceiros:</b> Coleta/ Envio.
+                          <b>Triagem:</b> Coletas e envios.
+                          <b>Acompanhamento de terceiros:</b> Entrega.<br />
+                          <u><b>Facilities:</b></u>
+                          <b>Negociação/ Contratação:</b> Terceiros.
+                          <b>Acompanhamento de prestação de serviços:</b>
+                          Manutenção e evento.<br />
+                          <u><b>Saúde e Segurança no Trabalho:</b></u>
+                          <b>CIPA:</b> Participação das ações para transmissão
+                          de conscientização.<br />
+                          <u><b>Viagens:</b></u> <b>Cadastro:</b>
+                          Orientação de solicitação de viagens e Uber.
+                          <b>Conferência:</b> Prestação de contas, verificação
+                          de reembolso/ devolução. <b>Relatórios:</b> Viagens
+                          concluídas/ canceladas.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-4">
-              <img src="imgs/img1 (3).jpeg" width="100%">
+            <div class="col">
+              <div class="card rounded mx-auto d-block">
+                <img
+                  src="./assets/julio-casas-imoveis.jpg"
+                  class="card-img-top"
+                  alt="equipe-Julio-Casas-Imoveis"
+                />
+                <div class="card-header">
+                  <h5 class="card-title">
+                    JULIO CASAS IMÓVEIS CONSULTORIA DE VENDAS LTDA
+                  </h5>
+                  <h6 class="card-sub-title">(Imobiliária)</h6>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushItemTwo"
+                >
+                  <div class="accordion-item">
+                    <h6 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Auxiliar Administrativo<br />
+                        (2018/ 2017 - 1 ano e 3 meses)
+                      </button>
+                    </h6>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushItem"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          <u><b>Consultas (11 meses):</b></u>
+                          <b>Nota Fiscal:</b> Conferência de valores, emissão e
+                          fechamento. <b>Contas a pagar:</b> Lançamento e
+                          repasse de cobranças.
+                          <b>Regularização de contas:</b> Consulta de pagamentos
+                          e envio de notificação de contas de utilidades não
+                          pagas. <b>Cadastro:</b> Transferência de titularidade
+                          de contas de consumo.
+                          <b>Protocolos administrativos/ serviços:</b> Entrada e
+                          acompanhamento de processos nos órgãos públicos e
+                          privados. <b>Arquivo:</b> Organização de
+                          documentos.<br />
+                          <u><b>Jurídico (1 mês):</b></u>
+                          <b>Validação:</b> Consulta em órgãos públicos e
+                          privados sobre a situação de pessoas físicas e
+                          jurídicas.
+                          <b>Orientação/ Conferência:</b> Contratos.<br />
+                          <u><b>Cobrança (1 mês):</b></u> <b>Contato:</b> Não
+                          recebimento de aluguel e esclarecimentos de valores
+                          lançados em demonstrativos.
+                          <b>Faturamento:</b> Triagem de aluguel vencido,
+                          lançamento de cobrança atualizada.<br />
+                          <u><b>Recepção (1 mês):</b></u>
+                          <b>Atendimento:</b> Direcionamento e repasse de
+                          recados presencial e telefônico.
+                          <b>Controle:</b> Retirada e devolução de chaves dos
+                          imóveis.<br />
+                          <u><b>Rescisão/ Manutenção (1 mês):</b></u>
+                          <b>Orientação:</b> Rescisão contratual.
+                          <b>Contratação de terceiros:</b> Agendamento de
+                          serviços e acompanhamento quando necessário de
+                          vistoria final. <b>Negociação:</b> Locatário e locador
+                          sobre adequações do imóvel.
+                          <b>Faturamento:</b> Rescisão e lançamentos de
+                          prestação de serviços de manutenção.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card rounded mx-auto d-block">
+                <img
+                  src="./assets/sorocred.png"
+                  class="card-img-top"
+                  alt="equipe-sorocred"
+                />
+                <div class="card-header">
+                  <h5 class="card-title">
+                    ALPHAMONEY PROMOTORA DE VENDAS LTDA
+                  </h5>
+                  <h6 class="card-sub-title">(Grupo Sorocred S.A)</h6>
+                </div>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushItemThree"
+                >
+                  <div class="accordion-item">
+                    <h6 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFour"
+                      >
+                        Auxiliar Administrativo<br />
+                        (2017/ 2014 - 3 anos)
+                      </button>
+                    </h6>
+                    <div
+                      id="flush-collapseFour"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushItem"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          <u><b>Documentos e Cartões (1 ano e 6 meses):</b></u>
+                          <b>Estoque:</b> Planejamento, organização e controle
+                          de fluxos. <b>Cadastro:</b> Conferência de informação
+                          para emissão de 2ª via de cartão.
+                          <b>Documentos:</b> Preparação, triagem e protocolo.
+                          <b>Relatório:</b> Controle de cartão.<br />
+                          <u><b>Qualidade (1 ano e 3 meses):</b></u>
+                          <b>Monitoramento:</b> Transação de cartão.
+                          <b>Coleta de dados:</b> Informações de uso do cartão.
+                          <b>Cadastro:</b> Atualização de informações, inclusão
+                          ou exclusão de bloqueios e requisição de cartão.
+                          <b>Relatório:</b> Controle de performance e riscos de
+                          uso do cartão. <b>Relatório:</b> Controle de
+                          documentos devolvidos.<br />
+                          <u><b>Marketing Seguro (3 meses):</b></u>
+                          <b>Orientação:</b> Registro de sinistro, acionamento/
+                          cancelamento de seguro do cartão.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h6 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFive"
+                      >
+                        Auxiliar de Cadastro<br />
+                        (2013/ 2012 – 1 ano e 2 meses)
+                      </button>
+                    </h6>
+                    <div
+                      id="flush-collapseFive"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushItem"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          <b>Lançamento/ Arquivamento:</b> Cadastros impressos.
+                          <b>Controle:</b> Planilha de inventário da caixa de
+                          arquivos. <b>Análise de vendas perdidas:</b> Consulta
+                          de documentos, coleta de dados em sistema.
+                          <b>Relatório:</b> Vendas incompletas e reprovadas.
+                          <b>Conferência/ Requisição de atendimento:</b>
+                          Borderôs de pagamento de entrada com o cadastro do
+                          cliente e encaminhamento do documento ao departamento
+                          responsável.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h6 class="accordion-header" id="addon-wrapping-2">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSix"
+                      >
+                        Auxiliar de Atendimento<br />
+                        (2012- 3 meses)
+                      </button>
+                    </h6>
+                    <div
+                      id="flush-collapseSix"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushItem"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          <b>Atendimento:</b> Verificação e repasse de
+                          informação via telefone aos lojistas.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h6 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSeven"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSeven"
+                      >
+                        Auxiliar em Teleserviços - Aprendiz do CIEE (2012/ 2010
+                        - 2 anos)
+                      </button>
+                    </h6>
+                    <div
+                      id="flush-collapseSeven"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushItem"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          <b>Análise de crediário:</b> Conferência de
+                          documentos. <b>Contato telefônico:</b> Verificação de
+                          informações do cliente. <b>Cadastro:</b> Atualização
+                          de dados cadastrais.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <div
+          class="tab-pane"
+          id="extra-tab-pane"
+          role="tabpanel"
+          aria-labelledby="extra-tab"
+          tabindex="0"
+        ></div>
       </div>
-    </section>
-
-    <section id="serviços">
-      <div class="container-fluid servicos text-center margin">
-        <h3 class="margin">Serviços</h3>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              <img src="imgs/img1 (4).jpeg" width="100%">
-            </div>
-            <div class="col-lg-6">
-              <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              <img src="imgs/img1 (4).jpeg" width="100%">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="conteiner-fluid text-center bg-footer margin">
-      <p>Desenvolvido por: Rafael Galleani Replicado por: Bianca</p>
-    </footer>
-
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
