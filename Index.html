@@ -49,6 +49,20 @@
         <li class="nav-item" role="presentation">
           <button
             class="nav-link"
+            id="extra-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#extra-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="extra-tab-pane"
+            aria-selected="false"
+          >
+            Desenvolvimento Profissional
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
             id="expirience-tab"
             data-bs-toggle="tab"
             data-bs-target="#expirience-tab-pane"
@@ -58,20 +72,6 @@
             aria-selected="false"
           >
             Experiência Anterior
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="extra-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#extra-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="extra-tab-pane"
-            aria-selected="false"
-          >
-            Formação Extra Currícular
           </button>
         </li>
       </ul>
@@ -493,7 +493,7 @@
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h6 class="accordion-header" id="addon-wrapping-2">
+                    <h6 class="accordion-header">
                       <button
                         class="accordion-button collapsed"
                         type="button"
@@ -559,7 +559,9 @@
           role="tabpanel"
           aria-labelledby="extra-tab"
           tabindex="0"
-        ></div>
+        >
+          <p>Implementação em andamento</p>
+        </div>
       </div>
     </main>
     <script
