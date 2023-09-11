@@ -77,6 +77,12 @@ img {
   font-weight: bold;
 }
 
+.footer {
+  margin-top: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+
 /*CSS-desktop*/
 @media screen and (min-width: 768px) {
 }
