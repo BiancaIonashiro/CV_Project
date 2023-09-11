@@ -49,12 +49,12 @@
         <li class="nav-item" role="presentation">
           <button
             class="nav-link"
-            id="extra-tab"
+            id="desenvolvimento-tab"
             data-bs-toggle="tab"
-            data-bs-target="#extra-tab-pane"
+            data-bs-target="#desenvolvimento-tab-pane"
             type="button"
             role="tab"
-            aria-controls="extra-tab-pane"
+            aria-controls="desenvolvimento-tab-pane"
             aria-selected="false"
           >
             Desenvolvimento Profissional
@@ -213,32 +213,47 @@
           aria-labelledby="desenvolvimento-tab"
           tabindex="0"
         >
-          <div
-            class="btn-group-vertical"
-            role="group"
-            aria-label="Vertical radio toggle button group"
-          >
-            <input
-              type="radio"
-              class="btn-check"
-              name="vbtn-radio"
-              id="vbtn-radio1"
-              autocomplete="off"
-              checked
-            />
-            <label class="btn btn-outline-danger" for="vbtn-radio1"
-              >Radio 1</label
-            >
-            <input
-              type="radio"
-              class="btn-check"
-              name="vbtn-radio"
-              id="vbtn-radio2"
-              autocomplete="off"
-            />
-            <label class="btn btn-outline-danger" for="vbtn-radio2"
-              >Radio 2</label
-            >
+          <div class="desenvolvimento desenvolvimento--formacao">
+            <div class="formacao">
+              <button
+                type="button"
+                class="formacao__face formacao__face--front"
+              >
+                <span
+                  class="position-absolute top-0 start-0 translate-small badge rounded-pill bg-danger"
+                >
+                  3
+                </span>
+                <p>Formação Acadêmica</p>
+                <img src="assets/academico.png" alt="academico" />
+              </button>
+              <div class="formacao__face formacao__face--back">
+                <div class="chart">
+                  <canvas id="doughnut" width="100" height="100"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desenvolvimento desenvolvimento--formacao">
+            <div class="formacao">
+              <button
+                type="button"
+                class="formacao__face formacao__face--front"
+              >
+                <span
+                  class="position-absolute top-0 start-0 translate-small badge rounded-pill bg-danger"
+                >
+                  35
+                </span>
+                <p>Formação Extra-Currícular</p>
+                <img src="assets/extracurricular.png" alt="extra-curricular" />
+              </button>
+              <div class="formacao__face formacao__face--back">
+                <div class="chart">
+                  <canvas id="barchart" width="100" height="100"></canvas>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div
@@ -596,5 +611,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
